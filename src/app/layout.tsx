@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import '../app/styles/globals.css';
+import '../styles/Globals.css';
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
