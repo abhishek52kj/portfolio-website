@@ -1,30 +1,33 @@
-"use client";
-
-import { Project } from '../types'; // Import the Project type
+import { FC } from 'react';
+import { Project } from '../types';
 
 type ProjectsProps = {
   projects: Project[];
 };
 
-const Projects = ({ projects }: ProjectsProps) => {
+const Projects: FC<ProjectsProps> = ({ projects }) => {
   return (
-    <section id="projects" className="projects">
-      <h1>Projects</h1>
+    <div>
+      <h2 className="text-2xl font-bold mb-4">Projects</h2>
       <ul>
         {projects.map((project) => (
-          <li key={project.title}>
-            <h2>{project.title}</h2>
+          <li key={project.url}>
+            <h3 className="text-xl font-semibold">
+              {project.title} <span>{project.year}</span>
+            </h3>
             <p>{project.description}</p>
-            <ul>
-              {project.technologies.map((tech) => (
-                <li key={tech}>{tech}</li>
+            <ul className="flex space-x-2">
+              {(project.technologies ?? []).map((tech, index) => (
+                <li key={`${project.url}-${tech}-${index}`}>{tech}</li>
               ))}
             </ul>
-            <a href={project.url}>View Project</a>
+            <a href={project.url} className="text-blue-500 hover:underline">
+              View Project
+            </a>
           </li>
         ))}
       </ul>
-    </section>
+    </div>
   );
 };
 

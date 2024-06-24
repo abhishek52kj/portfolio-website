@@ -1,11 +1,9 @@
+# Example project file in src/content/projects/project1.md
 ---
-title: "Project 1"
-description: "Description of project 1."
-technologies:
-  - React
-  - Next.js
-  - Tailwind CSS
-url: "https://example.com/project1"
+title: "10x Designers"
+description: "Description of project."
+technologies: ["React", "Next.js", "Tailwind CSS"]
+url: "https://example.com"
+year: "22"
+new: true
 ---
-
-This is more detailed content about project 1.

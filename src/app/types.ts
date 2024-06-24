@@ -3,6 +3,8 @@ export type Project = {
   description: string;
   technologies: string[];
   url: string;
+  year: number;
+  new?: boolean; // Add the 'new' property
 };
 
 export type Contact = {
