@@ -50,10 +50,6 @@ Thumbs.db
 .next/
 out/
 
-# Tailwind CSS
-*.css
-*.css.map
-
 # Temporary files
 *.tmp
 
