@@ -6,7 +6,14 @@ const config: Config = {
     './public/**/*.html',          // Include any HTML files in the public directory
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        orange: {
+          600: '#f97316', // Current color
+          700: '#ea580c', // Darker shade for hover
+        },
+      },
+    },
   },
   plugins: [],
 };
