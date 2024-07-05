@@ -39,3 +39,66 @@ html, body {
     text-wrap: balance;
   }
 }
+
+/* Additional Styles */
+
+/* General Text Styles */
+.text-primary {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 400;
+  font-family: sans-serif;
+  text-decoration: none;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.text-secondary {
+  color: #B0B0B0;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+  font-family: sans-serif;
+  text-decoration: none;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.text-header-link {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 600;
+  font-family: sans-serif;
+  text-decoration: none;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.text-title {
+  color: #FFFFFF;
+  font-size: 32px;
+  line-height: normal;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-decoration: none;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+/* Button Styles */
+.bg-custom {
+  background-color: #604843;
+  color: #fbdbd0;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 9999px; /* Rounded full */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.bg-custom:hover {
+  background-color: #fbdbd0;
+  color: #604843;
+}
